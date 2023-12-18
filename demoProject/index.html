@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chicmic</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div>
+    <nav class="navbar navbar-expand-lg d-none d-sm-block" data-bs-theme="dark">
+      <div class="container">
+        <div class="row row-cols-3 w-100 align-items-center">
+          <div class="col-3">
+            <div class="elem d-inline p-1">
+              <svg color="#F3F3F3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H12" stroke="#F3F3F3" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-3 text-end">
+            <h3 class="mb-0 text-white">ChicMic</h6>
+          </div>
+
+          <div class="col-6 d-flex nav-right align-items-center" role="search">
+            <div class="elem ele-1 d-flex justify-content-center align-items-center px-2 me-2">
+              <img src="assests/img/nav_e1.png" width="20px" height="14px" alt="nav-element1" />
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.23017 7.20938C5.52875 6.92228 6.00353 6.93159 6.29063 7.23017L10 11.1679L13.7094 7.23017C13.9965 6.93159 14.4713 6.92228 14.7698 7.20938C15.0684 7.49647 15.0777 7.97125 14.7906 8.26983L10.5406 12.7698C10.3992 12.9169 10.204 13 10 13C9.79599 13 9.60078 12.9169 9.45938 12.7698L5.20938 8.26983C4.92228 7.97125 4.93159 7.49647 5.23017 7.20938Z"
+                  fill="#FFBD00" />
+              </svg>
+            </div>
+            <div class="elem ele-2 d-flex justify-content-center align-items-center px-2 me-2">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.99997 2C6.68626 2 3.99997 4.68629 3.99997 8C3.99997 9.88663 3.54624 11.6651 2.7426 13.2343C2.63591 13.4426 2.6326 13.6888 2.73365 13.9C2.83469 14.1111 3.02851 14.2629 3.25769 14.3105C4.32537 14.5322 5.41181 14.7023 6.51426 14.818C6.67494 16.602 8.17421 18 10 18C11.8258 18 13.3251 16.602 13.4857 14.818C14.5882 14.7023 15.6746 14.5322 16.7422 14.3105C16.9714 14.2629 17.1652 14.1111 17.2663 13.9C17.3673 13.6888 17.364 13.4426 17.2573 13.2343C16.4537 11.6651 16 9.88663 16 8C16 4.68629 13.3137 2 9.99997 2ZM8.0493 14.9433C8.69477 14.9809 9.34517 15 9.99997 15C10.6548 15 11.3052 14.9809 11.9507 14.9433C11.749 15.8345 10.9522 16.5 10 16.5C9.04777 16.5 8.25097 15.8345 8.0493 14.9433Z"
+                  fill="#FFBD00" />
+              </svg>
+            </div>
+            <div class="elem ele-3 d-flex justify-content-center align-items-center px-2 me-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.16613 2.62136V3.4786C4.13126 3.62665 3.10716 3.80823 2.09497 4.02223C1.70145 4.10543 1.44361 4.48425 1.51057 4.88086C2.02102 7.90456 4.54015 10.2449 7.64915 10.4805C8.4348 11.1221 9.36855 11.5907 10.3916 11.827C10.2927 12.9952 9.8965 14.0776 9.2788 15H8.54088C7.50534 15 6.66588 15.8395 6.66588 16.875V19.5H5.91577C4.67313 19.5 3.66577 20.5074 3.66577 21.75C3.66577 22.1642 4.00156 22.5 4.41577 22.5H19.4158C19.83 22.5 20.1658 22.1642 20.1658 21.75C20.1658 20.5074 19.1584 19.5 17.9158 19.5H17.1659V16.875C17.1659 15.8395 16.3264 15 15.2909 15H14.5524C13.9349 14.0777 13.5389 12.9953 13.4402 11.8271C14.4634 11.5908 15.3973 11.1222 16.1831 10.4805C19.2921 10.2449 21.8113 7.90456 22.3217 4.88086C22.3887 4.48425 22.1308 4.10543 21.7373 4.02223C20.7251 3.80823 19.701 3.62665 18.6661 3.4786V2.62136C18.6661 2.24303 18.3844 1.92394 18.0089 1.87713C16.0127 1.62819 13.9792 1.5 11.9161 1.5C9.85307 1.5 7.81961 1.62819 5.82333 1.87713C5.44791 1.92394 5.16613 2.24303 5.16613 2.62136ZM5.16613 5.25C5.16613 6.44618 5.47762 7.56995 6.02338 8.54424C4.66626 7.9367 3.61376 6.76975 3.16003 5.33687C3.8237 5.20825 4.49252 5.09398 5.16613 4.99438V5.25ZM18.6661 5.25V4.99438C19.3398 5.09398 20.0086 5.20825 20.6722 5.33688C20.2185 6.76975 19.166 7.9367 17.8089 8.54424C18.3547 7.56995 18.6661 6.44618 18.6661 5.25Z"
+                  fill="#FFBD00" />
+              </svg>
+            </div>
+            <div class="elem ele-4 d-flex justify-content-center align-items-center ps-2 me-2">
+              <p class="mb-0 text-white">100 €</p>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.23017 7.20938C5.52875 6.92228 6.00353 6.93159 6.29063 7.23017L10 11.1679L13.7094 7.23017C13.9965 6.93159 14.4713 6.92228 14.7698 7.20938C15.0684 7.49647 15.0777 7.97125 14.7906 8.26983L10.5406 12.7698C10.3992 12.9169 10.204 13 10 13C9.79599 13 9.60078 12.9169 9.45938 12.7698L5.20938 8.26983C4.92228 7.97125 4.93159 7.49647 5.23017 7.20938Z"
+                  fill="#FFBD00" />
+              </svg>
+              <div class=" sub-elem d-flex justify-content-center align-items-center">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_569_1479)">
+                    <path
+                      d="M14.5 4.00002H2.38C2.23524 4.02803 2.08608 4.02369 1.9432 3.9873C1.80031 3.95091 1.66724 3.88337 1.55352 3.78953C1.4398 3.69568 1.34823 3.57785 1.28539 3.44447C1.22254 3.31109 1.18997 3.16546 1.19 3.01802V2.99902L14 2.50002V1.31002C14.0209 1.13247 14.0011 0.952493 13.9423 0.783687C13.8834 0.61488 13.787 0.461654 13.6602 0.33558C13.5335 0.209505 13.3797 0.113878 13.2106 0.0559202C13.0415 -0.00203779 12.8614 -0.0208116 12.684 0.00101655L1.31 1.85002C0.926131 1.99172 0.594841 2.24754 0.360654 2.58309C0.126468 2.91863 0.00061164 3.31783 0 3.72702L0 14.499C0 14.8968 0.158035 15.2784 0.43934 15.5597C0.720644 15.841 1.10218 15.999 1.5 15.999H14.5C14.8978 15.999 15.2794 15.841 15.5607 15.5597C15.842 15.2784 16 14.8968 16 14.499V5.48902L16.001 5.44802C16.001 5.06345 15.8482 4.69464 15.5763 4.42271C15.3044 4.15078 14.9356 3.99802 14.551 3.99802L14.498 3.99902L14.5 4.00002ZM13 11C12.602 10.9999 12.2204 10.8417 11.9391 10.5602C11.6578 10.2787 11.4999 9.89697 11.5 9.49902C11.5001 9.10106 11.6583 8.71945 11.9398 8.43815C12.2213 8.15684 12.603 7.99888 13.001 7.99902C13.198 7.99908 13.3932 8.03796 13.5752 8.11343C13.7572 8.18889 13.9226 8.29948 14.0619 8.43886C14.2012 8.57824 14.3116 8.74369 14.387 8.92576C14.4623 9.10784 14.5011 9.30297 14.501 9.50002C14.5009 9.69706 14.4621 9.89217 14.3866 10.0742C14.3111 10.2562 14.2005 10.4216 14.0612 10.5609C13.9218 10.7002 13.7563 10.8106 13.5743 10.886C13.3922 10.9613 13.197 11.0001 13 11Z"
+                      fill="#262626" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_569_1479">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="elem ele-5 d-flex justify-content-center align-items-center px-2 me-2">
+              <p class="mb-0 text-white">100 €</p>
+            </div>
+            <div class="elem ele-1 d-flex justify-content-center align-items-center px-2 me-2">
+              <p class="mb-0 text-white">Martin Shein</p>
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.23017 7.20938C5.52875 6.92228 6.00353 6.93159 6.29063 7.23017L10 11.1679L13.7094 7.23017C13.9965 6.93159 14.4713 6.92228 14.7698 7.20938C15.0684 7.49647 15.0777 7.97125 14.7906 8.26983L10.5406 12.7698C10.3992 12.9169 10.204 13 10 13C9.79599 13 9.60078 12.9169 9.45938 12.7698L5.20938 8.26983C4.92228 7.97125 4.93159 7.49647 5.23017 7.20938Z"
+                  fill="#FFBD00" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section First Start -->
+
+    <section class="sec1 d-none d-sm-block">
+      <div class="block-1 h-100">
+        <div class="row row-col-2 h-100">
+          <div class="col-2">
+            <div class="cubs">
+              <div class="cub1">
+                <object data="assests/svg/cub1.svg" type="image/svg+xml" width="50" height="100">
+                </object>
+              </div>
+              <div>
+                <object data="assests/svg/cub2.svg" type="image/svg+xml" width="100" height="100">
+                </object>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex align-items-center">
+            <div class="text-white text">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet consectetur. Pretium nulla sed in elit quam id molestie urna eleifend.
+                Posuere
+                euismod bibendum id erat pretium vestibulum et. Consequat tellus donec sed aliquet tristique diam
+                ornare.
+                Pretium nulla tristique sed dolor. Urna quisque nec in tincidunt nulla.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="sec-right">
+              <img src="assests/img/money.png" alt="money-img" width="230px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Second Start -->
+
+    <section class="sec2">
+      <div class="container pt-sm-5 pt-3 px-sm-5">
+        <div class="mt-5 heading-sec">
+          <h4 class="sec-title d-none d-sm-block text-white">Contest</h4>
+          <h1 class="text-white d-sm-none text-center">1 000 € Daily Contest</h6>
+            <div class="d-flex justify-content-center py-4">
+              <div class="sec-line">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8.01367" cy="8" r="8" fill="#2DA47B" />
+                  <ellipse cx="8.11769" cy="8.10316" rx="5.36" ry="5.36" fill="#0F865D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <p class="sec-des">Listed below are the most frequently asked questions by members and we hope you find
+                the
+                answer you are looking for. However, if you can't find an answer, you can always contact chat customer
+                support by clicking on the round icon at the bottom right, and we'll be happy to help!</p>
+            </div>
+        </div>
+
+        <!-- Mobile Responsive Section -->
+
+        <div class="sec2-rep my-3 d-sm-none px-2">
+          <div class="row row-cols-3">
+            <div>
+              <div class="box">
+                <p class="mb-0 text-white sec-title">23</p>
+              </div>
+              <p class="mb-0 f-12 text-white text-center mt-1">Hours</p>
+            </div>
+            <div>
+              <div class="box">
+                <p class="mb-0 text-white sec-title">45</p>
+              </div>
+              <p class="mb-0 f-12 text-white text-center mt-1">Min</p>
+            </div>
+            <div>
+              <div class="box">
+                <p class="mb-0 text-white sec-title">31</p>
+              </div>
+              <p class="mb-0 f-12 text-white text-center mt-1">Sec</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Section -->
+
+        <div class="row row-cols-3 mt-5 justify-content-around align-items-center">
+          <div class="col-sm-6 col-5 board-sec">
+            <h4 class="sec-title text-start d-none d-sm-block">Leaderboard</h4>
+            <h3 class="text-start text-center d-sm-none text-y">Leaderboard</h3>
+          </div>
+          <div class="col-sm-6 col-7 board-right">
+            <object data="assests/svg/protect.svg" type="image/svg+xml" width="55" height="64">
+            </object>
+            <p class="mb-0 text-white">Your current position</p>
+          </div>
+        </div>
+
+        <!-- Mobile Contest Section -->
+        <div class="accordion acc-rep d-sm-none mt-5" id="accordionExample1">
+          <!-- Accordion 1 -->
+          <div class="my-3">
+            <button
+              class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              <div class="d-flex align-items-center text-white justify-content-start w-50">
+                <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="mb-0">User name</p>
+              </div>
+              <div class="btn-right w-50 text-end px-2">
+                <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+              </div>
+            </button>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordionExample1">
+              <div class="btn-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 text-gray text-uppercase">User</p>
+                  <h5 class="text-white">User name</h5>
+                </div>
+                <div class="mbl-list">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Casinos</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">1</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit count</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit amount</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">2500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Points</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">3075 points</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Prize</p>
+                        </div>
+                        <h5 class="text-white">100 €</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="my-3">
+            <button
+              class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+              aria-controls="collapseTwo">
+              <div class="d-flex align-items-center text-white justify-content-start w-50">
+                <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="mb-0">User name</p>
+              </div>
+              <div class="btn-right w-50 text-end px-2">
+                <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+              </div>
+            </button>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample1">
+              <div class="btn-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 text-gray text-uppercase">User</p>
+                  <h5 class="text-white">User name</h5>
+                </div>
+                <div class="mbl-list">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Casinos</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">1</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit count</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit amount</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">2500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Points</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">3075 points</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Prize</p>
+                        </div>
+                        <h5 class="text-white">100 €</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="my-3">
+            <button
+              class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">
+              <div class="d-flex align-items-center text-white justify-content-start w-50">
+                <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="mb-0">User name</p>
+              </div>
+              <div class="btn-right w-50 text-end px-2">
+                <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+              </div>
+            </button>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordionExample1">
+              <div class="btn-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 text-gray text-uppercase">User</p>
+                  <h5 class="text-white">User name</h5>
+                </div>
+                <div class="mbl-list">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Casinos</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">1</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit count</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit amount</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">2500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Points</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">3075 points</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Prize</p>
+                        </div>
+                        <h5 class="text-white">100 €</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="my-3">
+            <button
+              class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+              aria-controls="collapseFour">
+              <div class="d-flex align-items-center text-white justify-content-start w-50">
+                <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="mb-0">User name</p>
+              </div>
+              <div class="btn-right w-50 text-end px-2">
+                <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+              </div>
+            </button>
+            <div id="collapseFour" class="collapse" data-bs-parent="#accordionExample1">
+              <div class="btn-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 text-gray text-uppercase">User</p>
+                  <h5 class="text-white">User name</h5>
+                </div>
+                <div class="mbl-list">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Casinos</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">1</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit count</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Deposit amount</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">2500 €</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Points</p>
+                          <svg class="mx-1" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1.3125 7.7998C1.3125 4.65869 3.85888 2.1123 7 2.1123C10.1411 2.1123 12.6875 4.65869 12.6875 7.7998C12.6875 10.9409 10.1411 13.4873 7 13.4873C3.85888 13.4873 1.3125 10.9409 1.3125 7.7998ZM6.39114 6.9589C7.05978 6.62458 7.81264 7.2285 7.63133 7.95374L7.21774 9.6081L7.24194 9.596C7.45805 9.48794 7.72085 9.57554 7.82891 9.79166C7.93697 10.0078 7.84937 10.2706 7.63325 10.3786L7.60905 10.3907C6.94041 10.725 6.18755 10.1211 6.36886 9.39588L6.78245 7.74152L6.75825 7.75362C6.54214 7.86168 6.27934 7.77409 6.17128 7.55797C6.06323 7.34185 6.15082 7.07906 6.36694 6.971L6.39114 6.9589ZM7 6.0498C7.24162 6.0498 7.4375 5.85393 7.4375 5.6123C7.4375 5.37068 7.24162 5.1748 7 5.1748C6.75838 5.1748 6.5625 5.37068 6.5625 5.6123C6.5625 5.85393 6.75838 6.0498 7 6.0498Z"
+                              fill="white" fill-opacity="0.5" />
+                          </svg>
+                        </div>
+                        <h5 class="text-white">3075 points</h5>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 text-gray text-uppercase">Prize</p>
+                        </div>
+                        <h5 class="text-white">100 €</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Section -->
+
+        <!-- Contest Section -->
+        <div class="my-3 d-none d-sm-block">
+          <div class="row row-cols-5 table-sec p-2">
+            <div class="col-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <object data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="text-white mb-0"><small>USER</small><br>User name</p>
+                <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit count</small><br>11</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit amount</small><br>2500 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Prize</small><br>500 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2">
+              <img src="assests/img/board_img.png" width="94px" height="46px" alt="board-table" />
+            </div>
+          </div>
+
+          <!-- second -->
+          <div class="row row-cols-5 table-sec p-2 mt-3">
+            <div class="col-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <object data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="text-white mb-0"><small>USER</small><br>User name</p>
+                <svg width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit count</small><br>9</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit amount</small><br>1750 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Prize</small><br>250 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2">
+              <img src="assests/img/board_img.png" width="94px" height="46px" alt="board-table" />
+            </div>
+          </div>
+
+          <!-- Third -->
+          <div class="row row-cols-5 table-sec p-2 mt-3">
+            <div class="col-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <object data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="text-white mb-0"><small>USER</small><br>User name</p>
+                <svg width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit count</small><br>7</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit amount</small><br>975 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Prize</small><br>125 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2">
+              <img src="assests/img/board_img.png" width="94px" height="46px" alt="board-table" />
+            </div>
+          </div>
+
+          <!-- Forth -->
+          <div class="row row-cols-5 table-sec p-2 mt-3">
+            <div class="col-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <object data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="text-white mb-0"><small>USER</small><br>User name</p>
+                <svg width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit count</small><br>4</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit amount</small><br>700 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Prize</small><br>75 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2">
+              <img src="assests/img/board_img.png" width="94px" height="46px" alt="board-table" />
+            </div>
+          </div>
+
+          <!-- Fifth -->
+          <div class="row row-cols-5 table-sec p-2 mt-3">
+            <div class="col-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <object data="assests/svg/protect.svg" type="image/svg+xml" width="45" height="54">
+                </object>
+                <p class="text-white mb-0"><small>USER</small><br>User name</p>
+                <svg width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit count</small><br>3</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Deposit amount</small><br>550 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-around">
+              <p class="text-white mb-0"><small>Prize</small><br>50 €</p>
+              <object data="assests/svg/hor-line.svg" type="image/svg+xml"></object>
+            </div>
+            <div class="col-2">
+              <img src="assests/img/board_img.png" width="94px" height="46px" alt="board-table" />
+            </div>
+          </div>
+        </div>
+        <div class="btn-sec d-flex justify-content-center mt-4">
+          <button>Previous winners</button>
+        </div>
+      </div>
+
+      <!-- Section third start -->
+      <div class="sec3">
+        <div class="mt-5 pt-5 px-3 px-sm-0 heading-sec">
+          <h4 class="sec-title text-white d-none d-sm-block">level system</h4>
+          <h3 class="text-start text-center d-sm-none text-white">User levels</h3>
+          <div class="d-flex justify-content-center py-4">
+            <div class="sec-line">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8.01367" cy="8" r="8" fill="#2DA47B" />
+                <ellipse cx="8.11769" cy="8.10316" rx="5.36" ry="5.36" fill="#0F865D" />
+              </svg>
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-center">
+            <p class="sec-des">We want to be transparent about refunds, which is why we show the most recent users who
+              have
+              received a payment. We also show members whose refund application has been approved...</p>
+          </div>
+        </div>
+  
+        <!-- User Level Section -->
+        <div class="">
+          <div class="row row-col-2 bonus-sec px-sm-4 pt-4 flex-column-reverse flex-sm-row">
+            <div class="col-4">
+              <div class="tre-img">
+              </div>
+            </div>
+            <div class="col-sm-7 col-12">
+  
+              <!-- Accordion Section Start -->
+              <div class="container">
+                <div class="accordion" id="accordionExample">
+  
+                  <!-- Accordion 1 -->
+                  <div class="my-3">
+                    <button
+                      class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true"
+                      aria-controls="collapseone">
+                      <div class="d-flex align-items-center text-white justify-content-start w-50">
+                        <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45"
+                          height="54">
+                        </object>
+                        <p class="mb-0">Level 1</p>
+                      </div>
+                      <div class="btn-right w-50 d-flex align-items-center justify-content-end">
+                        <p class="mb-0 text-end pe-sm-5 pe-2">20% cashback</p>
+                        <object class="me-sm-1" data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+                      </div>
+                    </button>
+                    <div id="collapseone" class="collapse show" data-bs-parent="#accordionExample">
+                      <div class="btn-body">
+                        <div class="row row-cols-3 d-none d-sm-flex">
+                          <div class="col-1"></div>
+                          <div class="col-5 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Task</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Progress</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Reward</p>
+                          </div>
+                        </div>
+  
+                        <!-- First -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">1</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Make10 deposits to this casino</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/emp-prog.svg" type="image/svg+xml" width="130">
+                        </object>
+                              <div class="resp-line m-auto d-sm-none my-2"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">3 of 10 deposits</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white"></p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Second -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">2</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Invite 1 friend to join MrCashback</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line m-auto d-sm-none my-2"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">1 of 1 friend invited</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Third  -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">3</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Deposit 500 €</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none m-auto my-2"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">500 of 500 € </p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Accordion 2 -->
+                  <div class="my-3">
+                    <button
+                      class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      <div class="d-flex align-items-center text-white justify-content-start w-50">
+                        <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45"
+                          height="54">
+                        </object>
+                        <p class="mb-0">Level 2</p>
+                      </div>
+                      <div class="btn-right w-50 d-flex align-items-center justify-content-around">
+                        <p class="mb-0 text-end pe-sm-5 pe-2">22.5% cashback + 50 euro bonus</p>
+                        <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+                      </div>
+                    </button>
+                    <div id="collapsetwo" class="collapse" data-bs-parent="#accordionExample">
+                      <div class="btn-body">
+                        <div class="row row-cols-3 d-none d-sm-flex">
+                          <div class="col-1"></div>
+                          <div class="col-5 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Task</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Progress</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Reward</p>
+                          </div>
+                        </div>
+  
+                        <!-- First -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">1</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Make10 deposits to this casino</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/emp-prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none m-auto my-2"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">3 of 10 deposits</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white"></p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Second -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">2</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Invite 1 friend to join MrCashback</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none m-auto my-2"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">1 of 1 friend invited</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Third  -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">3</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Deposit 500 €</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none my-2 m-auto"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">500 of 500 € </p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Accordion 3 -->
+                  <div class="my-3">
+                    <button
+                      class="bonus-btn border-top border-0 border-warning rounded-top w-100 d-flex align-items-center justify-content-between"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false"
+                      aria-controls="collapsethree">
+                      <div class="d-flex align-items-center text-white justify-content-start w-50">
+                        <object class="mx-sm-4 mx-2" data="assests/svg/protect.svg" type="image/svg+xml" width="45"
+                          height="54">
+                        </object>
+                        <p class="mb-0">Level 3</p>
+                      </div>
+                      <div class="btn-right w-50 d-flex align-items-center justify-content-around">
+                        <p class="mb-0 text-end pe-sm-5 pe-2">25% cashback + 75 euro bonus</p>
+                        <object data="assests/svg/chevron-d.svg" type="image/svg+xml"></object>
+                      </div>
+                    </button>
+                    <div id="collapsethree" class="collapse" data-bs-parent="#accordionExample">
+                      <div class="btn-body">
+                        <div class="row row-cols-3 d-none d-sm-flex">
+                          <div class="col-1"></div>
+                          <div class="col-5 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Task</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Progress</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-3 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">Reward</p>
+                          </div>
+                        </div>
+  
+                        <!-- First -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">1</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Make10 deposits to this casino</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/emp-prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none my-2 m-auto"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">3 of 10 deposits</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white"></p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3.25C8.8203 3.25 3 9.0703 3 16.25C3 23.4297 8.8203 29.25 16 29.25C23.1797 29.25 29 23.4297 29 16.25C29 9.0703 23.1797 3.25 16 3.25ZM13.7071 12.5429C13.3166 12.1524 12.6834 12.1524 12.2929 12.5429C11.9024 12.9334 11.9024 13.5666 12.2929 13.9571L14.5858 16.25L12.2929 18.5429C11.9024 18.9334 11.9024 19.5666 12.2929 19.9571C12.6834 20.3476 13.3166 20.3476 13.7071 19.9571L16 17.6642L18.2929 19.9571C18.6834 20.3476 19.3166 20.3476 19.7071 19.9571C20.0976 19.5666 20.0976 18.9334 19.7071 18.5429L17.4142 16.25L19.7071 13.9571C20.0976 13.5666 20.0976 12.9334 19.7071 12.5429C19.3166 12.1524 18.6834 12.1524 18.2929 12.5429L16 14.8358L13.7071 12.5429Z"
+                                fill="#FD3003" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Second -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">2</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Invite 1 friend to join MrCashback</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none my-2 m-auto"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">1 of 1 friend invited</p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+  
+                        <!-- Third  -->
+                        <div class="row row-cols-5 my-3">
+                          <div class="col-sm-1 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white">3</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <svg class="d-sm-none" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-5 col-12 d-flex align-items-center justify-content-between">
+                            <p class="mb-0 text-white d-sm-none">Task</p>
+                            <svg class="d-sm-none" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                            <p class="mb-0 text-white bonus-text">Deposit 500 €</p>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-sm-3 col-12 d-flex align-items-center justify-content-between">
+                            <div class="w-xs-100">
+                              <p class="mb-0 text-white d-sm-none f-12 mt-2">Progress</p>
+                              <object class="d-none d-sm-block" data="assests/svg/prog.svg" type="image/svg+xml" width="130">
+                              </object>
+                              <div class="resp-line d-sm-none my-2 m-auto"></div>
+                              <p class="mb-0 text-white bonus-text text-center mt-1">500 of 500 € </p>
+                            </div>
+                            <svg class="d-none d-sm-block" width="2" height="20" viewBox="0 0 2 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-between d-none d-sm-flex">
+                            <p class="mb-0 text-y">€ 25</p>
+                            <svg width="2" height="20" viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 0V20" stroke="#6D6D6D" stroke-opacity="0.59" />
+                            </svg>
+                          </div>
+                          <div class="col-1 d-flex align-items-center justify-content-between d-none d-sm-block">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16 3.75C13.4288 3.75 10.9154 4.51244 8.77759 5.9409C6.63975 7.36935 4.97351 9.39968 3.98957 11.7751C3.00563 14.1506 2.74819 16.7644 3.2498 19.2862C3.75141 21.8079 4.98953 24.1243 6.80762 25.9424C8.6257 27.7605 10.9421 28.9986 13.4638 29.5002C15.9856 30.0018 18.5995 29.7444 20.9749 28.7604C23.3503 27.7765 25.3807 26.1103 26.8091 23.9724C28.2376 21.8346 29 19.3212 29 16.75C28.9964 13.3033 27.6256 9.99882 25.1884 7.56163C22.7512 5.12445 19.4467 3.75364 16 3.75ZM21.7075 14.4575L14.7075 21.4575C14.6146 21.5505 14.5043 21.6242 14.3829 21.6746C14.2615 21.7249 14.1314 21.7508 14 21.7508C13.8686 21.7508 13.7385 21.7249 13.6171 21.6746C13.4957 21.6242 13.3854 21.5505 13.2925 21.4575L10.2925 18.4575C10.1049 18.2699 9.99945 18.0154 9.99945 17.75C9.99945 17.4846 10.1049 17.2301 10.2925 17.0425C10.4801 16.8549 10.7346 16.7494 11 16.7494C11.2654 16.7494 11.5199 16.8549 11.7075 17.0425L14 19.3363L20.2925 13.0425C20.3854 12.9496 20.4957 12.8759 20.6171 12.8256C20.7385 12.7753 20.8686 12.7494 21 12.7494C21.1314 12.7494 21.2615 12.7753 21.3829 12.8256C21.5043 12.8759 21.6146 12.9496 21.7075 13.0425C21.8004 13.1354 21.8741 13.2457 21.9244 13.3671C21.9747 13.4885 22.0006 13.6186 22.0006 13.75C22.0006 13.8814 21.9747 14.0115 21.9244 14.1329C21.8741 14.2543 21.8004 14.3646 21.7075 14.4575Z"
+                                fill="#69CF18" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Section Forth Start -->
+
+    <section class="sec4 bg-c">
+      <div class="container py-5 px-sm-5">
+        <div class="mt-5 heading-sec">
+          <h4 class="sec-title text-white d-none d-sm-block">The latest Riskfree users<br> who got their</h4>
+          <h3 class="text-start text-center d-sm-none text-white">Riskfree users</h3>
+          <div class="d-flex justify-content-center py-4">
+            <div class="sec-line">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8.01367" cy="8" r="8" fill="#2DA47B" />
+                <ellipse cx="8.11769" cy="8.10316" rx="5.36" ry="5.36" fill="#0F865D" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <p class="sec-des">We want to be transparent about refunds, which is why we show the most recent users who
+              have received a payment. We also show members whose refund application has been approved...</p>
+          </div>
+        </div>
+
+        <!-- Payments Section -->
+
+        <div class="row row-cols-2 pay-sec justify-content-center mt-5 pb-5">
+          <div class="col-sm-5 mb-4 mb-sm-0 col-12 card-l">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="card-title text-center py-5 mb-1"><b>Recent users</b>,
+                  whose refund <br>application was accepted:
+                </div>
+                <div class="card-text">
+                  <ul class="list-group list-group-flush">
+                    <!-- List start -->
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <div class="logo_img"></div>
+                          <p class="mb-0 ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g rounded" src="assests/img/barz.png" width="75px" height="45px"
+                            alt="avtar_img" />
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g rounded" src="assests/img/reload.png" width="75px" height="45px"
+                            alt="avtar_img" />
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class=" rounded" src="assests/img/barz.png" width="75px" height="45px" alt="avtar_img" />
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g rounded" src="assests/img/reload.png" width="75px" height="45px"
+                            alt="avtar_img" />
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <div class="logo_img"></div>
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item pb-1">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class=" rounded" src="assests/img/barz.png" width="75px" height="45px" alt="avtar_img" />
+                          <p class="mb-0  ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-g mb-0">20 €</p>
+                          <p class="mb-0 ">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-12 card-r">
+            <div class="card text-white w-100">
+              <div class="card-body">
+                <div class="card-title text-center py-5"><b>Recent users</b>,
+                  whose money<br> was paid:
+                </div>
+                <div class="card-text">
+                  <ul class="list-group list-group-flush">
+                    <!-- List start -->
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-y" src="assests/img/avatar.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-y" src="assests/img/avatar.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g" src="assests/img/woman.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g" src="assests/img/woman.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-y" src="assests/img/avatar.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-y" src="assests/img/avatar.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row row-cols-2 align-items-center justify-content-between">
+                        <div class=" col-7 d-flex align-items-center justify-content-start w-50">
+                          <img class="img-g" src="assests/img/woman.png" width="40px" height="40px" alt="avtar_img" />
+                          <p class="mb-0 text-white ps-3">Carter Torff</p>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-between">
+                          <p class="text-y mb-0">20 €</p>
+                          <p class="mb-0 text-white">2023.09.10</p>
+                          <div>
+                            <object data="assests/svg/correct.svg" type="image/svg+xml"></object>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="foo-sec bg-footer py-5">
+      <div class="container">
+        <div class="row row-cols-4 justify-content-center">
+          <div class="col-sm-3 col-12 d-flex align-items-center">
+            <object data="assests/svg/cashback.svg" type="image/svg+xml" width="188" height="41">
+            </object>
+          </div>
+          <div class="col-sm-3 col-12 mt-5 mt-sm-0">
+            <h6 class="mb-0">INFORMATION</h6>
+            <div class="foo-prog mb-3">
+              <svg width="111" height="3" viewBox="0 0 111 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.2" x="0.0960693" y="0.5" width="110" height="2" rx="1" fill="#F3F3F3" />
+                <rect x="0.101929" y="0.5" width="50" height="2" rx="1" fill="#FFBD00" />
+              </svg>
+            </div>
+            <ul class="list-unstyled pl-0">
+              <li>ABOUT US</li>
+              <li>HOW IT WORKS</li>
+              <li>ACHIEVEMENTS AND BONUS TERMS</li>
+              <li>KYC - KNOW YOUR CUSTOMER</li>
+              <li>VERIFICATION AND DOCUMENTS</li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-12">
+            <h6 class="mb-0">HELP & SUPPORT</h6>
+            <div class="foo-prog mb-3">
+              <svg width="111" height="3" viewBox="0 0 111 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.2" x="0.0960693" y="0.5" width="110" height="2" rx="1" fill="#F3F3F3" />
+                <rect x="0.101929" y="0.5" width="50" height="2" rx="1" fill="#FFBD00" />
+              </svg>
+            </div>
+            <ul class="list-unstyled pl-0">
+              <li>TERMS OF SERVICE</li>
+              <li>COOKIES</li>
+              <li>PRIVACY POLICY</li>
+              <li>CONTACT US</li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-12">
+            <h6 class="mb-0">NOPEAT NOSTOT TARJOAA</h6>
+            <div class="foo-prog mb-3">
+              <svg width="111" height="3" viewBox="0 0 111 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.2" x="0.0960693" y="0.5" width="110" height="2" rx="1" fill="#F3F3F3" />
+                <rect x="0.101929" y="0.5" width="50" height="2" rx="1" fill="#FFBD00" />
+              </svg>
+            </div>
+            <div class="text-sm-end">
+              <img src="assests/img/zimpler.png" width="97px" height="26px" alt="zimpler" />
+            </div>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <div class="row row-cols-3 align-items-center justify-content-center after-foo">
+          <div class="col-sm-2 col-12 d-flex align-items-center justify-content-sm-between justify-content-center">
+            <p class="mb-0 text-white">2023 © <span class="text-y">Riskivapaa</span></p>
+            <svg class="d-none d-sm-block" width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+            </svg>
+          </div>
+          <div class="col-3 d-sm-flex align-items-center justify-content-around d-none">
+            <p class="mb-0 foo-18 p-1">18+</p>
+            <p class="mb-0 text-white">Pelaatko liikaa?</p>
+            <img src="assests/img/gambling.png" width="65px" height="24px" alt="gambling" />
+            <svg width="2" height="36" viewBox="0 0 2 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.33331 0.75V35.25" stroke="#6D6D6D" stroke-opacity="0.59" />
+            </svg>
+          </div>
+          <div class="col-2 d-sm-flex align-items-center justify-content-between d-none">
+            <img src="assests/img/gambleware.png" width="117px" height="24px" alt="gambling" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

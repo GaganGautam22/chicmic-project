@@ -1,0 +1,433 @@
+/* Global css class */
+
+html{
+  overflow-x: auto;
+}
+body{
+  overflow-x: hidden;
+}
+
+.bg-c {
+  background-color: #054634;
+}
+
+.text-y{
+    color: #FFBD00;
+}
+.text-g{
+  color: #04DA8D;
+}
+
+.text-gray{
+  color: rgba(255, 255, 255, 0.50);  
+}
+.sec-title {
+  text-align: center;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.sec-des {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 667px;
+}
+
+.sec-line {
+  width: 326px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #002210;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.sec-line svg {
+  margin-right: 5rem;
+}
+
+.f-12{
+  font-size: 12px;
+}
+
+/* -----End------ */
+
+.navbar {
+  border-bottom: 1px solid #042f23;
+  background: #054634;
+  box-shadow: 0px 4px 4px 0px rgba(4, 47, 35, 0.25);
+  padding: 10px 250px !important;
+}
+
+.elem {
+  height: 30px;
+  gap: 2px;
+  border-radius: 9px;
+  background: linear-gradient(180deg, #003c2a 0%, rgba(0, 60, 42, 0) 100%);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.nav-right .elem p {
+  font-family: SF UI Display;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ele-4 .sub-elem {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--b-s, #ffd927);
+  background: linear-gradient(131deg, #ffec4a 8.69%, #ffc400 76.92%);
+  box-shadow: 0px 2px 16px 0px rgba(255, 196, 0, 0.4);
+}
+
+/* Section First Start */
+
+.sec1 {
+  /* width: 1920px; */
+  height: 500px;
+
+  background: linear-gradient(110deg, rgba(5, 70, 52, 0) 54.8%, #054634 100.72%),
+    linear-gradient(180deg, rgba(5, 70, 52, 0) 4.53%, #054634 100%),
+    url("assests/img/bkg.jpg"), lightgray 0px -11.238px / 100% 150% no-repeat;
+  overflow: hidden;
+}
+
+.sec1 .cubs {
+  width: 266.472px;
+  height: 350px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  top: 20rem;
+}
+
+.sec1 .text p {
+  color: var(--White-300, #e5e5e5);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.sec1 .text h4 {
+  color: var(--White-50, #fff);
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 66px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sec1 .sec-right {
+  height: 500px;
+  width: 750px;
+  background: linear-gradient(180deg, rgba(5, 70, 52, 0) 78.53%, #054634 100%),
+    url("assests/img/king.png"), no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sec-right img {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  transform: rotate(101.988deg);
+}
+
+/* Section second start */
+
+.sec2 {
+  background: linear-gradient( rgba(5, 70, 52, 0.9) 100%, #054634 100%),
+    url("assests/img/sec2_bkg.jpg");
+}
+
+.sec2 .board-sec h4 {
+  color: #ffbd00;
+}
+.sec2 .board-right {
+  display: flex;
+  width: 257px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border-top: 2px solid #ffc400;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 196, 0, 0) 0%,
+      rgba(255, 196, 0, 0.1) 100%
+    ),
+    #002413;
+  height: 40px;
+}
+
+.board-right p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Arial;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.board-right svg {
+  margin-top: -0.7rem;
+  width: 55px;
+}
+
+.sec2 .table-sec {
+  width: 1062px;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  border-top: 1px solid #ffc400;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 196, 0, 0) 0%,
+      rgba(255, 196, 0, 0.1) 100%
+    ),
+    #002413;
+  margin: 0 auto;
+}
+
+.table-sec p small {
+  font-family: Arial;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sec2 .btn-sec button {
+  display: flex;
+  height: 50px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Green-a400, #45cb87);
+  box-shadow: 0px 4px 16px 0px rgba(69, 203, 135, 0.25);
+  border: unset;
+  color: var(--Green-900, #023624);
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sec2-rep .box{
+  display: flex;
+width: 92px;
+height: 92px;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 4px;
+border: 1px solid #45CB87;
+background: #002413;
+}
+
+/* section forth start */
+
+.bonus-sec .tre-img{
+    height: 400px; 
+    width: 450px;
+    background: url("assests/img/tresure.png") no-repeat;
+    background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.bonus-btn{
+    justify-content: start;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 196, 0, 0) 0%,
+      rgba(255, 196, 0, 0.1) 100%
+    ),
+    #002413;
+  margin: 0 auto;
+}
+
+.bonus-btn .btn-right p{
+    color: var(--Yellow-500, #FFBD00);
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+text-transform: uppercase;
+}
+.accordion .btn-body{
+    background: #002c1a !important;
+    padding: 12px 0px 12px 40px;
+}
+
+.bonus-text{
+    color: rgba(255, 255, 255, 0.50);
+font-family: Arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+
+/* Forth section Start */
+
+.pay-sec .card-r .card, .card-r .card-text .list-group li {
+  background: #376b5d;
+ color: #fff;
+}
+
+/* card right */
+
+.card-r .card-text img{
+  display: flex;
+padding: 7.813px;
+justify-content: center;
+align-items: center;
+gap: 7.813px;
+flex-shrink: 0;
+border-radius: 78.125px;
+}
+
+.card-r .card-text .img-y{
+  background: var(--Yellow-400, #FFC603);
+
+}
+
+.card-r .card-text .img-g{
+  background:  #04DA8D;
+
+}
+
+
+.card p{
+  font-size: 12px;
+}
+
+/* card Left */
+
+.card-l .card-text .logo_img{
+  width: 75px;
+  height: 45px;
+  border-radius: 4px;
+  background:  url("assests/img/board_img.png"), #1C2F68;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Footer Section Start */
+
+.bg-footer{
+  background: #054130;
+}
+
+.foo-sec h6, .foo-sec ul li{
+  color: var(--White-50, #FFF);
+font-family: Arial;
+font-style: normal;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.foo-sec h6{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.foo-sec ul li{
+  font-size: 12px;
+font-weight: 400;
+padding-bottom: 10px;
+cursor: pointer;
+}
+
+.foo-sec .foo-prog{
+  line-height: 0.8;
+}
+
+.foo-sec .foo-18{
+  background: #fff;
+  border-radius: 50%;
+
+}
+
+.foo-sec .after-foo p {
+  font-size: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) { 
+  .sec2 .board-right{
+    width: 185px !important;
+  }
+
+  .bonus-btn .btn-right p {
+    font-size: 12px !important;
+  }
+  .accordion .btn-body{
+    padding: 12px 10px 12px 10px;
+  }
+  .w-xs-100{
+    width: 100%;
+  }
+
+  .pay-sec .card-body{
+    padding: 0px;
+  }
+  .pay-sec .card-text .list-group li{
+    padding-right: 0.25rem!important;
+    padding-left: 0.25rem!important;
+  }
+  .bonus-sec .tre-img{
+    width: 310px;
+    height: 270px;
+  }
+ }
+
+ .resp-line{
+  width: 326px;
+height: 8px;
+flex-shrink: 0; 
+border-radius: 6px;
+background: var(--b, linear-gradient(131deg, #FFEC4A 8.69%, #FFC400 76.92%));
+
+/* b s d  */
+box-shadow: 0px 2px 16px 0px rgba(255, 196, 0, 0.70);
+ }
+
+ .mbl-list li{
+  background: #002c1a !important;
+ }
